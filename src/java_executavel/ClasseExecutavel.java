@@ -9,6 +9,7 @@ import javax.swing.JOptionPane;
 import java_classes.Aluno;
 import java_classes.Diretor;
 import java_classes.Disciplina;
+import java_classes.Secretario;
 import java_constantes.StatusAluno;
 import java_funcoes.FuncaoAutenticacao;
 
@@ -20,7 +21,7 @@ public class ClasseExecutavel {
             String login = JOptionPane.showInputDialog("Digite o login:");
             String senha = JOptionPane.showInputDialog("Digite a senha:");
 
-            if (new FuncaoAutenticacao(new Diretor(login, senha)).autenticar()) {
+            if (new FuncaoAutenticacao(new Diretor(login, senha)).autenticar() || new FuncaoAutenticacao(new Secretario(login, senha)).autenticar()) {
 
                 List<Aluno> alunos = new ArrayList<>();
 
