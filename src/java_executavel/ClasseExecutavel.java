@@ -92,18 +92,27 @@ public class ClasseExecutavel {
                 System.out.println("--------Lista dos Aprovados--------\n");
                 for (Aluno aluno : maps.get(StatusAluno.APROVADO)) {
                     System.out.println(aluno.getNome());
+                    System.out.println(aluno.getCpf());
+                    System.out.println(aluno.getIdade());
+                    System.out.println(aluno.getDataMatricula());
                     System.out.println(aluno.getDisciplinas());
                     System.out.println(aluno.CalcularMedia());
                 }
                 System.out.println("--------Lista em Recuperação--------\n");
                 for (Aluno aluno : maps.get(StatusAluno.RECUPERACAO)) {
                     System.out.println(aluno.getNome());
+                    System.out.println(aluno.getCpf());
+                    System.out.println(aluno.getIdade());
+                    System.out.println(aluno.getDataMatricula());
                     System.out.println(aluno.getDisciplinas());
                     System.out.println(aluno.CalcularMedia());
                 }
                 System.out.println("--------Lista dos Reprovados--------\n");
                 for (Aluno aluno : maps.get(StatusAluno.REPROVADO)) {
                     System.out.println(aluno.getNome());
+                    System.out.println(aluno.getCpf());
+                    System.out.println(aluno.getIdade());
+                    System.out.println(aluno.getDataMatricula());
                     System.out.println(aluno.getDisciplinas());
                     System.out.println(aluno.CalcularMedia());
                 }
