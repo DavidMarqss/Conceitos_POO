@@ -50,14 +50,7 @@ public class Diretor extends Pessoa implements PermitirAcesso {
     }
 
     @Override
-    public double salario() {
-        return 4500;
-    }
-
-
-    @Override
     public boolean autenticar(String login, String senha) {
-        /*return login.equals("admin") && senha.equals("admin");*/
         this.login = login;
         this.senha = senha;
         return autenticar();

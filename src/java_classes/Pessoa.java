@@ -47,11 +47,4 @@ public abstract class Pessoa {
         this.cpf = cpf;
     }
 
-    public boolean pessoaMaiorIdade(){
-        return idade >= 18;
-    }
-
-    /*Metodo abstract é obrigatorio nas classes filhas*/
-    public abstract double salario();
-
 }

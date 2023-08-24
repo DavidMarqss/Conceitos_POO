@@ -53,11 +53,6 @@ public class Aluno extends Pessoa {
 		Aluno other = (Aluno) obj;
 		return Objects.equals(cpf, other.cpf);
 	}
-	
-	/*Metodos Proprios*/
-	/*public void FazerCurso(String curso) {
-		System.out.println("Curso: "+curso);
-	}*/
 	public double CalcularMedia() {
 		double sNotas = 0.0;
 		for (Disciplina disciplina : disciplinas) {
@@ -77,20 +72,6 @@ public class Aluno extends Pessoa {
 		}else {
 			return StatusAluno.REPROVADO;
 		}
-	}
-
-	@Override
-	public boolean pessoaMaiorIdade() {
-		return idade >= 21;
-	}
-
-    @Override
-    public double salario() {
-        return 200;
-    }
-
-    public String msgMaiorIdade(){
-		return this.pessoaMaiorIdade()? "Já pode ser preso" : "Acabou de nascer";
 	}
 
 }
